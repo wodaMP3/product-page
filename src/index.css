@@ -243,7 +243,6 @@ html {
   .right-box {
     position: relative;
     left: 50px;
-    overflow-y: hidden;
   }
 }
 
@@ -288,7 +287,7 @@ html {
 @media (max-width: 500px) {
   .right-box {
     left: 140px; 
-    top: 1050px;
+    top: 1150px;
     bottom: 0;
   }
 
