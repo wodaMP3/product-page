@@ -39,8 +39,8 @@ function App() {
 
   return (
     <>
-      <Grid columns={{ initial: "1", md: "2" }} gap="2" width="auto" className='main-grid' style={{background: 'black'}}>
-        <Box height="500px" className='left-box'>
+      <Grid columns={{ initial: "1", md: "2" }} gap="2" width="auto" className='main-grid' style={{background: 'black', height: '0'}}>
+        <Box height="500px" className='left-box' style={{background: 'black'}}>
           <div className='product-img'>
           <div className='slider'>
           <Button className='slider-button prev' onClick={handlePrev}>
@@ -70,7 +70,7 @@ function App() {
           <div className='product-description'></div> */}
         </Box>
         
-        <Box height="1000px" className='right-box'>
+        <Box height="1000px" className='right-box' style={{background: 'black'}}>
           <Heading className='device-header'>Customize your device</Heading>
           <Heading className='color' size='4'>
             Color: White
