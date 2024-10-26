@@ -39,7 +39,7 @@ function App() {
 
   return (
     <>
-      <Grid columns={{ initial: "1", md: "2" }} gap="2" width="auto">
+      <Grid columns={{ initial: "1", md: "2" }} gap="2" width="auto" className='main-grid' style={{background: 'black'}}>
         <Box height="500px" className='left-box'>
           <div className='product-img'>
           <div className='slider'>
@@ -189,7 +189,7 @@ function App() {
             Add to cart
           </Button>
         </Box>
-        <Box className='box-container' style={{ background: "#121113", borderRadius: "var(--radius-3)" }}>
+        <Box className='box-container' style={{ background: "black", borderRadius: "var(--radius-3)" }}>
           <Container size="1">
               <img src={video} alt="" />
           </Container>
