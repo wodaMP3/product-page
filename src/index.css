@@ -1,0 +1,325 @@
+@import "@radix-ui/themes/styles.css";
+
+hr {
+  margin-right: 350px;
+}
+
+.product-container {
+  width: 500px;
+  height: 800px;
+}
+
+.ram-container {
+  width: 370px;
+  margin-bottom: 30px;
+}
+
+.customer-container {
+  margin-bottom: 30px;
+}
+
+.product-img {
+  position: relative;
+  top: 150px;
+  left: 200px;
+}
+
+.product-name {
+  position: relative;
+  bottom: 200px;
+  left: 280px;
+}
+
+.device-header {
+  margin-top: 50px;
+}
+
+.color {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.storage-header {
+  padding-bottom: 40px;
+}
+
+.radio-card {
+  margin-top: 20px;
+}
+
+.customer-header {
+  padding-bottom: 40px;
+}
+.payment-heading {
+  padding-top: 40px;
+}
+
+.payment-card {
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+}
+
+.rt-BaseRadioRoot {
+  max-width: 100%;
+    max-height: 100%;
+    padding-left: 20px;
+    /* right: 170px; */
+    /* margin-right: 200px; */
+    /* top: 20px; */
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    vertical-align: top;
+    flex-shrink: 0;
+    width: 100%;
+    cursor: var(--cursor-radio);
+    height: 50px;
+    --skeleton-height-override: var(--radio-size);
+    border-radius: var(--skeleton-radius);
+    --skeleton-radius-override: 100%;
+}
+
+.payment-text {
+    position: relative;
+    top: -35px;
+    left: 60px;
+}
+
+.price-text {
+    bottom: 55px;
+    margin-right: 5px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.cart-btn {
+  border: 1px solid blue;
+  margin-top: 105px;
+  background: white;
+  height: 50px;
+  color: black;
+  top: 20px;
+  width: 400px;
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-btn:hover {
+  background-color: rgb(207, 232, 252);
+  border: none;
+  transition: 0.5s;
+}
+
+.slider {
+  position: relative;
+    left: 20px;
+}
+
+.slider img {
+  width: 200px;
+  height: 252px;
+}
+
+.slider-button {
+  position: relative;
+  top: 100px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+
+.prev{
+  left: -20px
+}
+.next {
+  left: 20px;
+}
+
+.pagination {
+  position: relative;
+  left: 80px;
+  bottom: -10px;
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #007BFF;
+}
+
+.dot:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.video-container {
+    display: flex;
+    position: relative;
+    top: 200px;
+    left: -10px;
+}
+
+.video-container img {
+  width: 550px;
+}
+
+.box-container {
+  background-color: white;
+  position: relative;
+  top: -450px;
+  height: 500px;
+}
+
+.box-container img {
+  width: 600px;
+    height: 620px;
+    left: -100px;
+    position: relative;
+    bottom: 100px;
+}
+
+/* @media (max-width: 768px) {
+  hr {
+    margin-right: 20px;
+  }
+
+  .product-container {
+    height: auto;
+  }
+
+  .product-img {
+    top: 10px;
+    left: 0;
+  }
+
+  .product-name {
+    bottom: 0;
+    left: 0;
+  }
+
+  .device-header, .color, .storage-header, .customer-header, .payment-heading {
+    text-align: center;
+  }
+
+  .payment-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .cart-btn {
+    width: 100%;
+    max-width: none;
+  }
+
+  .slider-button {
+    top: 50px;
+  }
+
+  .video-container {
+    top: 10px;
+  }
+
+  .slider img {
+    max-width: 150px;
+  }
+} */
+@media (max-width: 768px) {
+  .slider {
+    position: relative;
+    left: 200px;
+    top: 100px;
+  }
+  .slider img {
+    width: 400px;
+    height: 465px;
+  }
+  .right-box {
+    position: relative;
+    left: 800px;
+    bottom: 400px;
+  }
+  .left-box {
+    position: relative;
+    right: 300px;
+  }
+  .product-name {
+    left: 600px;
+    bottom: 365px;
+  }
+  .pagination {
+    left: 183px;
+    gap: 10px;
+  }
+  .dot {
+    width: 30px;
+    height: 30px;
+  }
+  .slider-button {
+    top: 190px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 500px) {
+  .right-box {
+    left: 140px; 
+    top: 1050px;
+    bottom: 0;
+  }
+
+  hr {
+    margin-right: 0;
+  }
+
+  .box-container img {
+    bottom: 200px;
+    left: 30px;
+  }
+
+  .slider {
+    left: 430px;
+    transform: translateX(-50%);
+  }
+
+  .product-name {
+    left: 580px;
+  }
+
+  .pagination {
+    left: 130px;
+  }
+  .slider-button {
+    position: absolute;
+  }
+
+  .next {
+    left: 424px;
+  }
+  .prev {
+    left: -90px;
+  }
+}
+
+@media (max-width: 390px) {
+  .slider {
+    left: 390px;
+  }
+  .box-container img {
+    left: 3px;
+  }
+
+  .product-name {
+    left: 550px;
+  }
+}
